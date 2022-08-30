@@ -29,9 +29,12 @@ body {
 .header__li{
     margin: 0px 10px;
     text-align: center;
-
-
 }
+
+.header__li  img{
+    cursor: pointer;
+}
+
 
 .header__link {
     font-size: 16px;
@@ -48,10 +51,11 @@ body {
 }
 
 input[type=checkbox]:checked ~ .header__popup {
-    /*    display: block;*/
+        display: block;
 }
 
 .header__popup {
+
     position: absolute;
     left: -100px;
     top: 80px;
@@ -63,7 +67,7 @@ input[type=checkbox]:checked ~ .header__popup {
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
     padding: 20px 10px 20px 10px;
     overflow: auto;
-/*    display: none;*/
+    display: none;
 
 }
 
@@ -103,6 +107,7 @@ input[type=checkbox]:checked ~ .header__popup {
 
     /*height: 100px;*/
     width: 80px;
+    cursor: pointer;
 }
 
 .popup_item:focus{
